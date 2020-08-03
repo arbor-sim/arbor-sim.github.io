@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Arbor library - {{ page.title }}</title>
+      <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="{{'/assets/css/styles.css' |  prepend: site.baseurl}}">
+      <link rel="stylesheet" href="{{'/assets/css/font-awesome/css/font-awesome.min.css' |  prepend: site.baseurl}}">
+
+  </head>
+ <body>
+      <!-- navigation -->
+      {% include navigation.html %}
+      <!-- navigation end-->
+      <main role="main">
+        <div class="jumbotron">
+            <div class="container">
+
+                  <p>Arbor is a library for implementing performance portable network simulations of multi-compartment neuron models.</p>
+                  <p>
+                      <a class="btn btn-info btn-md" href="https://github.com/arbor-sim/arbor" role="button">
+                          <i class="fa fa-github fa-lg" aria-hidden="true"></i> Fork on GitHub</a>
+                      <a class="btn btn-info btn-md" href="https://arbor.readthedocs.io/en/latest/" role="button">
+                          <i class="fa fa-book fa-lg" aria-hidden="true"></i> Documentation</a>
+                  </p>
+            </div>
+        </div>
+
+        <div class="container">
+              <!-- content -->
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card-columns row">
+                        {% for post in site.posts %}
+                        <div class="card {{ post.front-size }} " >
+                            {% if post.thumb > "" %}
+                            <img src="./assets/images/{{ post.thumb }}" alt="{{ post.thumb-title }}"
+                                 class="bd-placeholder-img card-img-top" width="100%" />
+                            {% endif %}
+                            <div class="card-body">
+                                <!--<h5 class="card-title">{{ post.title }}</h5>-->
+                                <p class="card-text">{{ post.content  | remove: post.excerpt }}</p>
+                                <!-- <a href="{{ post.url }}" class="stretched-link">More</a> -->
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                  <!-- {{ content }}-->
+                </div>
+              <!-- content end -->
+            </div>
+
+            </div>
+
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="container">
+          <p>@ Arbor</p>
+        </div>
+      </footer>
+    <!-- js -->
+    <script src="{{'/assets/vendor/jquery.min.js' | prepend: site.baseurl}}"></script>
+    <script src="{{'/assets/vendor/popper-utils.min.js' | prepend: site.baseurl}}"></script>
+	<script src="{{'/assets/vendor/bootstrap.min.js' | prepend: site.baseurl}}"></script>
+    <script src="{{'/assets/js/js.js' | prepend: site.baseurl}}"></script>
+  </body>
+</html>
