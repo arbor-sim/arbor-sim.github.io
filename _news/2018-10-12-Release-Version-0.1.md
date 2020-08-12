@@ -2,8 +2,6 @@
 layout: post
 title:  "Release: Version 0.1"
 ---
-# Arbor Library
-
 **Arbor** library **version 0.1**, tagged as `v0.1`
 
 Arbor is a library for implementing performance portable network simulations of multi-compartment neuron models.
