@@ -2,5 +2,7 @@
   link: /
 - name: News
   link: /news
+- name: Fork on Github
+  link: https://github.com/arbor-sim/arbor
 - name: About
   link: /about
