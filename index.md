@@ -2,7 +2,7 @@
 layout: main
 title: Home
 ---
-# What is abor?
+# What is Arbor?
 
 Arbor is a performance portable library for simulation of large networks of multi-compartment neurons on contemporary high-performance computing (HPC) systems. It is specialized for graphics processing units (GPUs), vectorized multicore, Intel KNL and laptops with a modular design for extensibility to new computer architectures.
 
