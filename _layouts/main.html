@@ -36,23 +36,7 @@
               <!-- content -->
             <div class="row">
                 <div class="col-xl-12">
-                    <div class="card-columns row">
-                        {% for post in site.posts %}
-                        <div class="card {{ post.front-size }} " >
-                            {% if post.thumb > "" %}
-                            <img src="./assets/images/{{ post.thumb }}" alt="{{ post.thumb-title }}"
-                                 class="bd-placeholder-img card-img-top" width="100%" />
-                            {% endif %}
-                            <div class="card-body">
-                                <!--<h5 class="card-title">{{ post.title }}</h5>-->
-                                <p class="card-text">{{ post.content  | remove: post.excerpt }}</p>
-                                <!-- <a href="{{ post.url }}" class="stretched-link">More</a> -->
-                            </div>
-                        </div>
-                        {% endfor %}
-                    </div>
-
-                  <!-- {{ content }}-->
+                  {{ content }}
                 </div>
               <!-- content end -->
             </div>
