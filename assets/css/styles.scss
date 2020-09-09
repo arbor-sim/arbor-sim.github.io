@@ -8,7 +8,6 @@ a:focus,
 a:active,
  {
   color: #a73700;
-  text-decoration: underline;
 }
 a:hover {
 	color: #d96100;
@@ -71,6 +70,9 @@ h1, h2 {
   text-align: center;
 }
 
+main .container a {
+  text-decoration: underline;
+}
 
 #toTop {
   position: fixed;
