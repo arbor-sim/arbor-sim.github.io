@@ -8,7 +8,7 @@
       <link rel="icon" href="{{'/assets/images/arbor-lines-proto-colour-notext.svg' |  prepend: site.baseurl}}">
       <link rel="stylesheet" href="{{'/assets/css/font-awesome/css/font-awesome.min.css' |  prepend: site.baseurl}}">
   </head>
- <body{% unless page.frontpage %} class="page"{% endif %}>
+ <body{% if page.frontpage != true %} class="page"{% endif %}>
       <!-- navigation -->
       {% include navigation.html %}
       <!-- navigation end-->
@@ -33,7 +33,7 @@
             </div>
         </div>
         {% endif %}
-        <div class="container"{% unless page.frontpage %} style="padding-top: 12em;"{% endif %}>
+        <div class="container"{% if page.frontpage != true %} style="padding-top: 12em;"{% endif %}>
             <div class="row">
                 <div class="col-xl-12">
                 {{ content }}
