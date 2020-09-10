@@ -1,5 +1,5 @@
 ---
-layout: main
+frontpage: true
 title: Home
 ---
 # What is Arbor?
