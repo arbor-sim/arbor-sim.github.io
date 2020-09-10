@@ -1,4 +1,5 @@
 ---
+layout: page
 frontpage: true
 title: Home
 ---
