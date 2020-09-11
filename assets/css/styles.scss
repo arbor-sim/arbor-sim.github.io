@@ -83,13 +83,25 @@ main > .container a {
 }
 
 .navbar {
-	height: 7rem;
-  	background-image: url("../images/arbor-lines-proto-colour-full.svg");
-	background-position: center;
-	background-repeat: no-repeat; /* Do not repeat the image */
-  	background-size: auto;
-    padding-right: 0;
-    padding-bottom: 0rem;
+	height: 6.8rem;
+    padding-bottom: 0;
+}
+
+.logo {
+  background-image: url("../images/arbor-lines-proto-colour-full.svg");
+  background-position: center;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: auto;
+  padding: 0;
+  position: relative;
+  top: 1rem;
+  display: block;
+  width: 100%;
+  height: 3.8rem;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1100;
 }
 
 .navbar-nav {
@@ -97,6 +109,8 @@ main > .container a {
   bottom: -1.8rem;
   padding-right: 4rem;
 }
+
+
 
 .subnav {
   margin: 4em auto 0 auto;
@@ -125,12 +139,13 @@ main > .container a {
 }
 
 main .jumbotron {
-    padding-top: 12rem;
+    padding-top: 10rem;
     padding-bottom: 6rem;
 }
 
 .navbar > .container button {
 	cursor: pointer;
+	z-index: 1000000;
 }
 
 .navbar > .container .stretched-link {
@@ -150,16 +165,23 @@ pre.highlight {
 	margin-bottom: 1.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 982px) {
 	.navbar {
 		height: 100px;
-		background-image: url("../images/arbor-lines-proto-colour.svg");
-		background-position: 90% center;
+	}
+	.logo {
+        background-image: url("../images/arbor-lines-proto-colour.svg");
+		background-position: 50% center;
 		background-repeat: no-repeat;
 		background-size: inherit;
-	}
+		float: right;
+		width: 50%;
+    }
 	#navbarToggler.text-right {
       text-align: left !important;
+    }
+    #navbarToggler.text-right li {
+      margin-right:10px;
     }
     .jumbotron {
 	    padding-top: 6rem;
@@ -169,11 +191,11 @@ pre.highlight {
 		bottom: 0.5rem;
 	}
 	.navbar > .container button {
-		z-index: 1000;
+		z-index: 10000;
 	}
 }
 
-@media (min-width: 768) {
+@media (min-width: 982px) {
   .navbar {
 	height: 6rem;
   }
