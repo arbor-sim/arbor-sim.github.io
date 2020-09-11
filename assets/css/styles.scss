@@ -83,7 +83,7 @@ main > .container a {
 }
 
 .navbar {
-	height: 6.8rem;
+	height: 7rem;
     padding-bottom: 0;
 }
 
@@ -106,7 +106,7 @@ main > .container a {
 
 .navbar-nav {
   position: relative;
-  bottom: -1.8rem;
+  bottom: -2.8rem;
   padding-right: 4rem;
 }
 
@@ -211,6 +211,8 @@ pre.highlight {
   #navbarToggler .navbar-nav {
     margin-bottom: 2.5rem;
   }
-
+  .navbar {
+    height: 7rem;
+  }
 }
 
