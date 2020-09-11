@@ -1,11 +1,11 @@
-
+<a class="logo" href="{{'/' | prepend: site.baseurl}}"></a>
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
   <div class="container">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarToggler">
-      <ul class="navbar-nav ml-auto flex-nowrap">
+      <ul class="navbar-nav flex-row ml-md-auto d-md-flex">
         {% for item in site.data.navigation %}
             <li {% if page.url == item.link %}class="nav-item active"{% else
              %}class="nav-item"{% endif %}>
@@ -13,7 +13,6 @@
             </li>
         {% endfor %}
       </ul>
-    </div>
-<!-- <a href="{{ '/' }}" class="stretched-link"></a> -->
   </div>
 </nav>
+
