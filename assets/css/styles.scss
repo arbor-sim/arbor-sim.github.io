@@ -167,8 +167,11 @@ pre.highlight {
 
 @media (max-width: 982px) {
 	.navbar {
-		height: 100px;
+		height: 120px;
 	}
+	.navbar-nav {
+      bottom: -1rem;
+    }
 	.logo {
         background-image: url("../images/arbor-lines-proto-colour.svg");
 		background-position: 50% center;
@@ -181,7 +184,7 @@ pre.highlight {
       text-align: left !important;
     }
     #navbarToggler.text-right li {
-      margin-right:10px;
+      margin-right: 1.2rem;
     }
     .jumbotron {
 	    padding-top: 6rem;
@@ -196,9 +199,6 @@ pre.highlight {
 }
 
 @media (min-width: 982px) {
-  .navbar {
-	height: 6rem;
-  }
   .masthead-brand {
     float: left;
   }
