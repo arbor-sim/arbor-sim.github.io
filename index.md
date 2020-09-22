@@ -37,12 +37,6 @@ Use Arbor if you have the need to run your detailed cellular-level model in an e
 
 ## How do I work with it?
 
-We provide packages through the Python Package Index, which you can install through pip:
-
-    pip install arbor
-
-Only point releases are submitted to PyPI, and of course this only provides you the Python package. If you wish to use Arbor as a C++ library, or want to use a possibly more recent version, you can get Arbor at GitHub (<https://github.com/arbor-sim/arbor>) and compile it on the target system (for detailed information visit <https://arbor.readthedocs.io/en/latest/install.html>).
-
 Arbor provides both a low level C++ API and a higher level Python API:
 
 -   The Python API is expected to be the most commonly used interface for computational neuroscientists 
