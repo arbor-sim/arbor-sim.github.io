@@ -129,6 +129,16 @@ main > .container a {
     font-weight: bold;
 }
 
+.btn-arbor {
+  background-color: #d86310;
+  border-color: #d86310;
+}
+
+.btn-arbor:hover {
+  background-color: #a53c00;
+  border-color: #a53c00;
+}
+
 .sticky-top {
   position: sticky;
   top: 6em;
