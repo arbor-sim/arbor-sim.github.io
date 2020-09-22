@@ -119,7 +119,7 @@ main > .container a {
     justify-content: flex-start;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.show {
     color: #d86310;
     font-weight: bold;
 }
