@@ -3,8 +3,6 @@ layout: post
 title:  "Release: Version 0.4"
 ---
 
-**Arbor** library **version 0.4**, tagged as `[v0.4](https://github.com/arbor-sim/arbor/releases/tag/v0.4)`
-
 ## Release notes
 
 ### Library
