@@ -1,0 +1,71 @@
+<!-- MVP.css quickstart template: https://github.com/andybrewer/mvp/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="./res/arbor-lines-proto-colour-notext.svg">
+    <link rel="stylesheet" href="./res/mvp-arbor.css">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="description" content="Arbor">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Arbor</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" style="filter:none"><img alt="Logo" src="./res/arbor-lines-proto-colour-full.svg" height="70"></a>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cooperations.html">Cooperations</a></li>
+                <li><a href="https://github.com/arbor-sim/arbor/releases" target="_blank">News &nearr;</a></li>
+                <li><a href="https://www.github.com/arbor-sim/arbor/" target="_blank"><!--<span class="fa fa-github fa-lg"></span> -->GitHub &nearr;</a></li>
+            </ul>
+        </nav>
+        <p>Arbor: a multi-compartment neural network simulation library</p>
+        <br>
+        <p><a href="https://arbor.readthedocs.io/en/latest/install" target="_blank"><b><span class="fa fa-download fa-lg"></span> Install</b></a><a href="https://arbor.readthedocs.io" target="_blank"><b><span class="fa fa-book fa-lg"></span> Documentation</b></a><a href="#get-help"><b><span class="fa fa-question-circle fa-lg"></span> Get Help</b></a></p>
+    </header>
+    <main>
+        <article id="Collaborations">
+            <h2>Collaborations</h2>
+
+            <p>Use cases have included the neocortical simulations, macaque visual cortical areas, and olfactory bulb simulations. Arbor developers are collaborating with researchers and modellers in the development of efficient support for structural plasticity.</p>
+
+            <p><strong>FIPPA: The Functional Interplay between Plasticity Processes on Arbor</strong><br>
+            The goal of FIPPA is to extend the neural network simulator Arbor by key plasticity processes that will allow to simulate and analyze the long-term adaptive dynamics of large-scale, morphologically-detailed neuronal networks.The models that will be ported and augmented are based on the neuro-theoretical framework by <a href="https://www.tetzlab.com">tetzlab.com</a>. These models already indicated that the interplay between the plasticity processes of synaptic plasticity, synaptic scaling, and structural plasticity yields the formation and organization of motor memories.The research question is how multi-compartment neuron models with detailed synaptic dynamics can be utilized to improve the performance of such networks. Our main hypothesis is that the adaptive dynamics on the network level enforces the specialization of branches by the formation of synaptic clusters leading to the formation of self-sustaining long-term memories and an overall increase in storage capacity.</p>
+
+            <p><strong>Arborio: Arbor Implementation of the Inferior Olive Network</strong><br>
+            This proposal takes a large-scale model of the inferior olive of the cerebellar complex as a case
+            study for integration with Arbor and the HBP platforms to be released in SGA3 (EBRAINS, FENIX RI).
+            Specifically, our proposal will (1) provide stress-tests for Arbor in the case of large-scale networks
+            densely connected via gap junction, (2) guide design and implementation of essential features such
+            as LFP estimation and stochastic input sources, (3) provide backend implementation work for multiGPU
+            implementation and (4) Incorporate the IO model into the cerebellar cortical model of the
+            HBP's Brain Simulation Platform (BSP). To reach these goals, the proposal counts on expert teams on
+            inferior-olive modeling (Mario Negrello, EMC, Rotterdam), HPC engineering solutions for multiGPU
+            and other backends (Christos Strydis, EMC, Rotterdam) and cerebellar-network modeling within BSP
+            (Egidio D'Angelo, UNIPV). More info: <a href="https://neurocomputinglab.com">neurocomputinglab.com</a></p>
+
+            <p><strong>Interoperation with the community</strong><br>
+            Full support for the SONATA and NeuroML file specifications are under active development, and Arbor will also provide APIs for integration with other tools and simulators, including co-simulation with <a href="https://www.nest-simulator.org">Nest</a> mediated via spike exchange for large, multi-scale brain simulations, and participation in orchestrated simulation, analysis and visualization applications with NEST, <a href="http://neuralensemble.org/elephant/">Elephant</a>), <a href="https://www.thevirtualbrain.org">TVB</a> and other tools using the <a href="https://hbp-hpc-platform.fz-juelich.de/?hbp_software=in-situ-pipeline">HBP in-situ pipeline</a>.</p>
+
+            <p><strong>Open calls</strong><br>
+            Expert computational neuroscientists from both outside and inside the Human Brain Project (HBP) are invited to develop models and adapt workflows for Arbor, specifically for networks of detailed cell models that require HPC. It is planned to increase the user base within the next three years by preparing user-defined cellular-level models for portable HPC simulations using Arbor across a variety of current and emerging supercomputing resources through a Call for Expression of Interest, where you are warmly invited to apply: <a href="https://www.humanbrainproject.eu/en/collaborate/open-calls/">humanbrainproject.eu/en/collaborate/open-calls/</a>. Alternatively, <a href="#get-in-touch">get in touch</a> directly.</p>
+
+        </article>
+    </main>
+    <footer>
+        <hr>
+        <p>
+            <small>Copyright 2020. Arbor is a high-performance library for computational neuroscience simulations, being developed in work package 7.5.4 of the <a href="https://www.humanbrainproject.eu">Human Brain Project</a>.
+            <br>
+            The development team is based in: <a href="https://www.cscs.ch">Swiss National Supercomputing Center</a> (CSCS) and <a href="https://www.fz-juelich.de/ias/jsc/EN/">Jülich Supercomputing Centre</a> (JSC)</small>
+        </p>
+    </footer>
+</body>
+
+</html>

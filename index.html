@@ -17,9 +17,10 @@
 <body>
     <header>
         <nav>
-            <a href="/" style="filter:none"><img alt="Logo" src="./res/arbor-lines-proto-colour-full.svg" height="70"></a>
+            <a href="index.html" style="filter:none"><img alt="Logo" src="./res/arbor-lines-proto-colour-full.svg" height="70"></a>
             <ul>
-                <li><a href="#about">About</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cooperations.html">Cooperations</a></li>
                 <li><a href="https://github.com/arbor-sim/arbor/releases" target="_blank">News &nearr;</a></li>
                 <li><a href="https://www.github.com/arbor-sim/arbor/" target="_blank"><!--<span class="fa fa-github fa-lg"></span> -->GitHub &nearr;</a></li>
             </ul>
@@ -66,83 +67,6 @@
                 <p>Validation tests against numeric/analytic models and NEURON: <a href="https://nsuite.readthedocs.io/en/latest/" target="_blank">NSuite</a></p>
             </aside>
         </section>
-        <hr>
-        <article id="about">
-            <h2>What is Arbor?</h2>
-
-            <figure style="float:right"><img alt="Arbor-Gui" src="./res/arbor-gui.png" height="320"><figcaption>The Arbor GUI.</figcaption></figure>
-
-            <p>Arbor [<a href="#ref1">1</a>,<a href="#ref2">2</a>] is a performance portable library for simulation of large networks of multi-compartment neurons on contemporary high-performance computing (HPC) systems. It is developed under an open development model by the Jülich Supercomputing Centre’s SimLab Neuroscience and the Swiss National Supercomputing Center (CSCS), in close collaboration with the neuroscientific community.</p>
-
-            <p>Arbor is designed to handle very large, very long and computationally intensive problems in neuroscience. Furthermore, Arbor aims to prepare neuroscience users for new HPC architectures. At the same time, Arbor is designed to be easy to use and understand, so that also beginners to computational neuroscience can get up to speed quickly. Whether your model is large or small, Arbor is able to optimized and compute your result on almost any hardware.</p>
-
-            <p>Arbor simulates networks of spiking neurons, particularly multi-compartment neurons. In these networks, the interaction between cells is conveyed by spikes and gap junction and the multi-compartment neurons are characterized by axonal delays, synaptic functions and cable trees. Each cell is modeled as a branching, one-dimensional electrical system with dynamics derived from the balance of transmembrane currents with axial currents that travel through the intracellular medium, and with ion channels and synapses represented by additional current sources. Arbor additionally models leaky integrate-and-fire cells and proxy spike sources.</p>
-
-            <h2>Background and motivation</h2>
-
-            <p>The evolution of computing equipment ranging from the desktop PC to supercomputing centers has enabled a plethora of tools for numerically computing predictions of neuronal network behavior that is comparable with a variety of experimental results, thus allowing the rigorous testing of possible functional models with varying levels of experimental verification, mathematical validity and stability, and computational performance. New HPC architectures such as the addition of ubiquitous GPU resources have been a new challenge. Developing performant algorithms for computing the Hines matrix on GPUs and other vectorized hardware has been an additional hurdle [<a href="#ref3">3</a>]. The development of Arbor has focused on tackling issues of vectorization and emerging hardware architectures by using modern C++ and automated code generation, within an open-source and open-development model.</p>
-
-            <h2>The Arbor approach</h2>
-
-            <p>Arbor is designed to accommodate three primary goals:
-
-            <ul><li>scalability;</li>
-            <li>extensibility;</li>
-            <li>and performance portability.</li>
-            </ul>
-            </p>
-
-            <p>Scalability is achieved through distributed model construction, following the abstraction of a recipe and through the use of an asynchronous MPI-based spike communication scheme.</p>
-
-            <p>To achieve abstraction, Arbor makes a distinction between the description of a model, and the execution of a model: a recipe describes a model, and a simulation is an executable instantiation of a model.</p>
-
-            <p>To be able to simulate a model, three basic steps need to be considered:
-
-            <ul><li>first, describe the model by defining a recipe;</li>
-            <li>second, define the computational resources available to execute the model;</li>
-            <li>and finally, initiate and execute a simulation of the recipe on the chosen hardware resources.</li>
-            </ul>
-            </p>
-
-            <p>The description of multi-compartment cells also includes the specification of ion channel and synapse dynamics. In the recipe, these specifications are called mechanisms. Implementations of mechanisms are either hand-coded or a provided translator (modcc) is used to compile a subset of NEURON’s mechanism specification language NMODL, and layouts can be specified using the SWC file format.</p>
-
-            <p>Arbor is extensible, allowing for the creation of new kinds of cells and new kinds of cell implementations, while target-specific vectorization, code generation and cell group implementations allow hardware optimized performance of models specified in a portable and generic way.</p>
-
-            <h2>References</h2>
-            <p id="ref1">1. N. Abi Akar et al., Arbor - A Morphologically-Detailed Neural Network Simulation Library for Contemporary High-Performance Computing Architectures, 2019 27th Euromicro International Conference on Parallel, Distributed and Network-Based Processing (PDP), Pavia, Italy, 13 Feb 2019 - 15 Feb 2019, DOI: 10.1109/EMPDP.2019.8671560</p>
-
-            <p id="ref2">2. Nora Abi Akar et al., arbor-sim/arbor: Arbor Library v0.2 (Version v0.2), Zenodo, Mar 4 2019, DOI: 10.5281/zenodo.2583709 http://doi.org/10.5281/zenodo.2583709</p>
-
-            <p id="ref3">3. Huber, Felix, Efficient Tree Solver for Hines Matrices on the GPU, arXiv preprint arXiv:1810.12742 (2018).</p>
-        </section>
-        <hr>
-        <article id="Collaborations">
-            <h2>Collaborations</h2>
-
-            <p>Use cases have included the neocortical simulations, macaque visual cortical areas, and olfactory bulb simulations. Arbor developers are collaborating with researchers and modellers in the development of efficient support for structural plasticity.</p>
-
-            <p><strong>FIPPA: The Functional Interplay between Plasticity Processes on Arbor</strong><br>
-            The goal of FIPPA is to extend the neural network simulator Arbor by key plasticity processes that will allow to simulate and analyze the long-term adaptive dynamics of large-scale, morphologically-detailed neuronal networks.The models that will be ported and augmented are based on the neuro-theoretical framework by <a href="https://www.tetzlab.com">tetzlab.com</a>. These models already indicated that the interplay between the plasticity processes of synaptic plasticity, synaptic scaling, and structural plasticity yields the formation and organization of motor memories.The research question is how multi-compartment neuron models with detailed synaptic dynamics can be utilized to improve the performance of such networks. Our main hypothesis is that the adaptive dynamics on the network level enforces the specialization of branches by the formation of synaptic clusters leading to the formation of self-sustaining long-term memories and an overall increase in storage capacity.</p>
-
-            <p><strong>Arborio: Arbor Implementation of the Inferior Olive Network</strong><br>
-            This proposal takes a large-scale model of the inferior olive of the cerebellar complex as a case
-            study for integration with Arbor and the HBP platforms to be released in SGA3 (EBRAINS, FENIX RI).
-            Specifically, our proposal will (1) provide stress-tests for Arbor in the case of large-scale networks
-            densely connected via gap junction, (2) guide design and implementation of essential features such
-            as LFP estimation and stochastic input sources, (3) provide backend implementation work for multiGPU
-            implementation and (4) Incorporate the IO model into the cerebellar cortical model of the
-            HBP's Brain Simulation Platform (BSP). To reach these goals, the proposal counts on expert teams on
-            inferior-olive modeling (Mario Negrello, EMC, Rotterdam), HPC engineering solutions for multiGPU
-            and other backends (Christos Strydis, EMC, Rotterdam) and cerebellar-network modeling within BSP
-            (Egidio D'Angelo, UNIPV). More info: <a href="https://neurocomputinglab.com">neurocomputinglab.com</a></p>
-
-            <p><strong>Interoperation with the community</strong><br>
-            Full support for the SONATA and NeuroML file specifications are under active development, and Arbor will also provide APIs for integration with other tools and simulators, including co-simulation with <a href="https://www.nest-simulator.org">Nest</a> mediated via spike exchange for large, multi-scale brain simulations, and participation in orchestrated simulation, analysis and visualization applications with NEST, <a href="http://neuralensemble.org/elephant/">Elephant</a>), <a href="https://www.thevirtualbrain.org">TVB</a> and other tools using the <a href="https://hbp-hpc-platform.fz-juelich.de/?hbp_software=in-situ-pipeline">HBP in-situ pipeline</a>.</p>
-
-            <p><strong>Open calls</strong><br>
-            Expert computational neuroscientists from both outside and inside the Human Brain Project (HBP) are invited to develop models and adapt workflows for Arbor, specifically for networks of detailed cell models that require HPC. It is planned to increase the user base within the next three years by preparing user-defined cellular-level models for portable HPC simulations using Arbor across a variety of current and emerging supercomputing resources through a Call for Expression of Interest, where you are warmly invited to apply: <a href="https://www.humanbrainproject.eu/en/collaborate/open-calls/">humanbrainproject.eu/en/collaborate/open-calls/</a>. Alternatively, <a href="#get-in-touch">get in touch</a> directly.</p>
-
-        </article>
         <hr>
         <article id="get-help">
             <h2>Get help and get involved</h2>
