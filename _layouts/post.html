@@ -1,0 +1,16 @@
+---
+layout: master
+---
+<article id="{{page.title}}">
+    <h2>{{page.title}}</h2>
+    Posted on <time class="entry-date published" datetime="{{ page.date }}">{{ page.date | date: '%d %B %Y' }}</time>
+
+    {{ content }}
+</article>
+
+<hr>
+<nav class="navigation post-navigation">
+    {% if page.previous %}<i>Previous post: <a href="{{page.previous.url | relative_url }}" rel="prev">{{page.previous.title}}</a></i>{% endif %}
+    {% if page.next %}<i>Next post: <a href="{{page.next.url | relative_url }}" rel="next">{{page.next.title}}</a></i>{% endif %}
+</nav>
+

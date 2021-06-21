@@ -1,92 +1,48 @@
-<!-- MVP.css quickstart template: https://github.com/andybrewer/mvp/ -->
+---
+layout: page
+title: "About"
+---
+<figure style="float:right"><img alt="Arbor-Gui" src="./res/arbor-gui.png" height="320"><figcaption>The Arbor GUI.</figcaption></figure>
 
-<!DOCTYPE html>
-<html lang="en">
+<p>Arbor [<a href="#ref1">1</a>,<a href="#ref2">2</a>] is a performance portable library for simulation of large networks of multi-compartment neurons on contemporary high-performance computing (HPC) systems. It is developed under an open development model by the Jülich Supercomputing Centre’s SimLab Neuroscience and the Swiss National Supercomputing Center (CSCS), in close collaboration with the neuroscientific community.</p>
 
-<head>
-    <link rel="icon" href="./res/arbor-lines-proto-colour-notext.svg">
-    <link rel="stylesheet" href="./res/mvp-arbor.css">
-    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
-    <meta charset="utf-8">
-    <meta name="description" content="Arbor">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<p>Arbor is designed to handle very large, very long and computationally intensive problems in neuroscience. Furthermore, Arbor aims to prepare neuroscience users for new HPC architectures. At the same time, Arbor is designed to be easy to use and understand, so that also beginners to computational neuroscience can get up to speed quickly. Whether your model is large or small, Arbor is able to optimized and compute your result on almost any hardware.</p>
 
-    <title>Arbor</title>
-</head>
+<p>Arbor simulates networks of spiking neurons, particularly multi-compartment neurons. In these networks, the interaction between cells is conveyed by spikes and gap junction and the multi-compartment neurons are characterized by axonal delays, synaptic functions and cable trees. Each cell is modeled as a branching, one-dimensional electrical system with dynamics derived from the balance of transmembrane currents with axial currents that travel through the intracellular medium, and with ion channels and synapses represented by additional current sources. Arbor additionally models leaky integrate-and-fire cells and proxy spike sources.</p>
 
-<body>
-    <header>
-        <nav>
-            <a href="index.html" style="filter:none"><img alt="Logo" src="./res/arbor-lines-proto-colour-full.svg" height="70"></a>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="collaboration.html">Collaboration</a></li>
-                <li><a href="https://github.com/arbor-sim/arbor/releases">News &nearr;</a></li>
-                <li><a href="https://www.github.com/arbor-sim/arbor/"><!--<span class="fa fa-github fa-lg"></span> -->GitHub &nearr;</a></li>
-            </ul>
-        </nav>
-        <p>Arbor: a multi-compartment neural network simulation library</p>
-        <br>
-        <p><a href="https://docs.arbor-sim.org/en/latest/install"><b><span class="fa fa-download fa-lg"></span> Install</b></a><a href="https://docs.arbor-sim.org"><b><span class="fa fa-book fa-lg"></span> Documentation</b></a><a href="index.html#get-help"><b><span class="fa fa-question-circle fa-lg"></span> Get Help</b></a></p>
-    </header>
-    <main>
-        <article id="about">
-            <h2>What is Arbor?</h2>
+<h2>Background and motivation</h2>
 
-            <figure style="float:right"><img alt="Arbor-Gui" src="./res/arbor-gui.png" height="320"><figcaption>The Arbor GUI.</figcaption></figure>
+<p>The evolution of computing equipment ranging from the desktop PC to supercomputing centers has enabled a plethora of tools for numerically computing predictions of neuronal network behavior that is comparable with a variety of experimental results, thus allowing the rigorous testing of possible functional models with varying levels of experimental verification, mathematical validity and stability, and computational performance. New HPC architectures such as the addition of ubiquitous GPU resources have been a new challenge. Developing performant algorithms for computing the Hines matrix on GPUs and other vectorized hardware has been an additional hurdle [<a href="#ref3">3</a>]. The development of Arbor has focused on tackling issues of vectorization and emerging hardware architectures by using modern C++ and automated code generation, within an open-source and open-development model.</p>
 
-            <p>Arbor [<a href="#ref1">1</a>,<a href="#ref2">2</a>] is a performance portable library for simulation of large networks of multi-compartment neurons on contemporary high-performance computing (HPC) systems. It is developed under an open development model by the Jülich Supercomputing Centre’s SimLab Neuroscience and the Swiss National Supercomputing Center (CSCS), in close collaboration with the neuroscientific community.</p>
+<h2>The Arbor approach</h2>
 
-            <p>Arbor is designed to handle very large, very long and computationally intensive problems in neuroscience. Furthermore, Arbor aims to prepare neuroscience users for new HPC architectures. At the same time, Arbor is designed to be easy to use and understand, so that also beginners to computational neuroscience can get up to speed quickly. Whether your model is large or small, Arbor is able to optimized and compute your result on almost any hardware.</p>
+<p>Arbor is designed to accommodate three primary goals:
 
-            <p>Arbor simulates networks of spiking neurons, particularly multi-compartment neurons. In these networks, the interaction between cells is conveyed by spikes and gap junction and the multi-compartment neurons are characterized by axonal delays, synaptic functions and cable trees. Each cell is modeled as a branching, one-dimensional electrical system with dynamics derived from the balance of transmembrane currents with axial currents that travel through the intracellular medium, and with ion channels and synapses represented by additional current sources. Arbor additionally models leaky integrate-and-fire cells and proxy spike sources.</p>
+<ul><li>scalability;</li>
+<li>extensibility;</li>
+<li>and performance portability.</li>
+</ul>
+</p>
 
-            <h2>Background and motivation</h2>
+<p>Scalability is achieved through distributed model construction, following the abstraction of a recipe and through the use of an asynchronous MPI-based spike communication scheme.</p>
 
-            <p>The evolution of computing equipment ranging from the desktop PC to supercomputing centers has enabled a plethora of tools for numerically computing predictions of neuronal network behavior that is comparable with a variety of experimental results, thus allowing the rigorous testing of possible functional models with varying levels of experimental verification, mathematical validity and stability, and computational performance. New HPC architectures such as the addition of ubiquitous GPU resources have been a new challenge. Developing performant algorithms for computing the Hines matrix on GPUs and other vectorized hardware has been an additional hurdle [<a href="#ref3">3</a>]. The development of Arbor has focused on tackling issues of vectorization and emerging hardware architectures by using modern C++ and automated code generation, within an open-source and open-development model.</p>
+<p>To achieve abstraction, Arbor makes a distinction between the description of a model, and the execution of a model: a recipe describes a model, and a simulation is an executable instantiation of a model.</p>
 
-            <h2>The Arbor approach</h2>
+<p>To be able to simulate a model, three basic steps need to be considered:
 
-            <p>Arbor is designed to accommodate three primary goals:
+<ul><li>first, describe the model by defining a recipe;</li>
+<li>second, define the computational resources available to execute the model;</li>
+<li>and finally, initiate and execute a simulation of the recipe on the chosen hardware resources.</li>
+</ul>
+</p>
 
-            <ul><li>scalability;</li>
-            <li>extensibility;</li>
-            <li>and performance portability.</li>
-            </ul>
-            </p>
+<p>The description of multi-compartment cells also includes the specification of ion channel and synapse dynamics. In the recipe, these specifications are called mechanisms. Implementations of mechanisms are either hand-coded or a provided translator (modcc) is used to compile a subset of NEURON’s mechanism specification language NMODL, and layouts can be specified using the SWC file format.</p>
 
-            <p>Scalability is achieved through distributed model construction, following the abstraction of a recipe and through the use of an asynchronous MPI-based spike communication scheme.</p>
+<p>Arbor is extensible, allowing for the creation of new kinds of cells and new kinds of cell implementations, while target-specific vectorization, code generation and cell group implementations allow hardware optimized performance of models specified in a portable and generic way.</p>
 
-            <p>To achieve abstraction, Arbor makes a distinction between the description of a model, and the execution of a model: a recipe describes a model, and a simulation is an executable instantiation of a model.</p>
+<h2>References</h2>
+<p id="ref1">1. N. Abi Akar et al., Arbor - A Morphologically-Detailed Neural Network Simulation Library for Contemporary High-Performance Computing Architectures, 2019 27th Euromicro International Conference on Parallel, Distributed and Network-Based Processing (PDP), Pavia, Italy, 13 Feb 2019 - 15 Feb 2019, DOI: 10.1109/EMPDP.2019.8671560</p>
 
-            <p>To be able to simulate a model, three basic steps need to be considered:
+<p id="ref2">2. Nora Abi Akar et al., arbor-sim/arbor: Arbor Library v0.2 (Version v0.2), Zenodo, Mar 4 2019, DOI: 10.5281/zenodo.2583709 http://doi.org/10.5281/zenodo.2583709</p>
 
-            <ul><li>first, describe the model by defining a recipe;</li>
-            <li>second, define the computational resources available to execute the model;</li>
-            <li>and finally, initiate and execute a simulation of the recipe on the chosen hardware resources.</li>
-            </ul>
-            </p>
-
-            <p>The description of multi-compartment cells also includes the specification of ion channel and synapse dynamics. In the recipe, these specifications are called mechanisms. Implementations of mechanisms are either hand-coded or a provided translator (modcc) is used to compile a subset of NEURON’s mechanism specification language NMODL, and layouts can be specified using the SWC file format.</p>
-
-            <p>Arbor is extensible, allowing for the creation of new kinds of cells and new kinds of cell implementations, while target-specific vectorization, code generation and cell group implementations allow hardware optimized performance of models specified in a portable and generic way.</p>
-
-            <h2>References</h2>
-            <p id="ref1">1. N. Abi Akar et al., Arbor - A Morphologically-Detailed Neural Network Simulation Library for Contemporary High-Performance Computing Architectures, 2019 27th Euromicro International Conference on Parallel, Distributed and Network-Based Processing (PDP), Pavia, Italy, 13 Feb 2019 - 15 Feb 2019, DOI: 10.1109/EMPDP.2019.8671560</p>
-
-            <p id="ref2">2. Nora Abi Akar et al., arbor-sim/arbor: Arbor Library v0.2 (Version v0.2), Zenodo, Mar 4 2019, DOI: 10.5281/zenodo.2583709 http://doi.org/10.5281/zenodo.2583709</p>
-
-            <p id="ref3">3. Huber, Felix, Efficient Tree Solver for Hines Matrices on the GPU, arXiv preprint arXiv:1810.12742 (2018).</p>
-        </section>
-    </main>
-    <footer>
-        <hr>
-        <p>
-            <small>Copyright 2021. Arbor is a high-performance library for computational neuroscience simulations.This research has received funding from the European Unions Horizon 2020 Framework Programme for Research and Innovation under the Specific Grant Agreement No. 720270 (Human Brain Project SGA1), Specific Grant Agreement No. 785907 (Human Brain Project SGA2), and Specific Grant Agreement No. 945539 (Human Brain Project SGA3).
-            <br>
-            The development team is based at the <a href="https://www.cscs.ch">Swiss National Supercomputing Center</a> (CSCS) and the <a href="https://www.fz-juelich.de/ias/jsc/EN/">Jülich Supercomputing Centre</a> (JSC)</small>
-        </p>
-    </footer>
-</body>
-
-</html>
+<p id="ref3">3. Huber, Felix, Efficient Tree Solver for Hines Matrices on the GPU, arXiv preprint arXiv:1810.12742 (2018).</p>

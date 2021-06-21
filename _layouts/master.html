@@ -1,0 +1,45 @@
+<!-- MVP.css quickstart template: https://github.com/andybrewer/mvp/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="{{'./res/arbor-lines-proto-colour-notext.svg' | relative_url }}">
+    <link rel="stylesheet" href="{{'./res/mvp-arbor.css' | relative_url }}">
+    <link rel="stylesheet" href="{{'./font-awesome/css/font-awesome.min.css' | relative_url }}">
+    <meta charset="utf-8">
+    <meta name="description" content="Arbor">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% if page.title %}{{ page.title }} | {% endif %}Arbor</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="{{'' | relative_url }}" style="filter:none"><img alt="Logo" src="{{'./res/arbor-lines-proto-colour-full.svg' | relative_url }}" height="70"></a>
+            <ul>
+                <li><a href="{{'./about' | relative_url }}">About</a></li>
+                <li><a href="{{'./news' | relative_url }}">News</a></li>
+                <li><a href="{{'./collaboration' | relative_url }}">Collaborations</a></li>
+                <li><a href="https://www.github.com/arbor-sim/arbor/" target="_blank"><!--<span class="fa fa-github fa-lg"></span> -->GitHub &nearr;</a></li>
+            </ul>
+        </nav>
+        <p>Arbor: a multi-compartment neural network simulation library</p>
+        <br>
+        <p><a href="https://docs.arbor-sim.org/en/latest/install" target="_blank"><b><span class="fa fa-download fa-lg"></span> Install</b></a><a href="https://docs.arbor-sim.org" target="_blank"><b><span class="fa fa-book fa-lg"></span> Documentation</b></a><a href="{{'/#get-help' | relative_url }}"><b><span class="fa fa-question-circle fa-lg"></span> Get Help</b></a></p>
+    </header>
+    <main>
+        {{content}}
+    </main>
+    <footer>
+        <hr>
+        <p>
+            <small>Copyright {{ site.time | date: '%Y' }}. Arbor is a high-performance library for computational neuroscience simulations, being developed in work package 7.5.4 of the <a href="https://www.humanbrainproject.eu">Human Brain Project</a>.
+            <br>
+            The development team is based in: <a href="https://www.cscs.ch">Swiss National Supercomputing Center</a> (CSCS) and <a href="https://www.fz-juelich.de/ias/jsc/EN/">Jülich Supercomputing Centre</a> (JSC)</small>
+        </p>
+    </footer>
+</body>
+
+</html>
