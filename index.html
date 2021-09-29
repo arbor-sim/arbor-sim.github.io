@@ -5,31 +5,35 @@ layout: master
         <section>
             <header>
                 <p>
-                    Arbor is a library for implementing performance portable network simulations of multi-compartment neuron models.
-                    <br>
-                    Arbor is designed from the ground up for <strong>many core</strong> architectures.
+                    Arbor is a multi-compartment neuron simulation library; compatible with next-generation accelerators; best-practices applied to research software; focussed on community-driven development.
                 </p>
             </header>
             <aside>
-                <h3>Performance</h3>
-                <p>Distributed parallelism using MPI</p>
-                <p>Optimized back end for CUDA</p>
-                <p>Optimized vector back ends for Intel (KNL, AVX, AVX2) and Arm (ARMv8-A NEON) intrinsics</p>
-                <p>Asynchronous spike exchange that overlaps compute and communication</p>
-                <p>Efficient sampling of voltage and current on all back ends</p>
-                <p>Efficient implementation of all features on GPU</p>
+                <h3>Neuroscience</h3>
+                <p>Separately describe neuroscience and execution; no leaky abstractions!</p>
+                <p>Cable Cells: <a href="https://docs.arbor-sim.org/en/latest/concepts/morphology.html">describe new ones</a> or <a href="https://docs.arbor-sim.org/en/latest/fileformat/">use existing files</a></p>
+                <p>Access morphologies through a powerful <a href="https://docs.arbor-sim.org/en/latest/concepts/labels.html"><abbr title="domain specific language">DSL</abbr></a></p>
+                <p>Mechanisms: <a href="https://docs.arbor-sim.org/en/latest/concepts/mechanisms.html#built-in-catalogues">builtins</a>, write your own in C++ or <a href=https://docs.arbor-sim.org/en/latest/fileformat/nmodl.html">NMODL</a></p>
+                <p>LIF Cells</p>
+                <p>Describe networks in <a href="https://docs.arbor-sim.org/en/latest/concepts/recipe.html">a powerful and flexible way</a></p>
+                <p>Run on laptops and HPC: let Arbor handle the execution details</p>
             </aside>
             <aside>
                 <h3>Using Arbor</h3>
                 <p>Designed for easy workflow integration</p>
+                <p>Descriptive, organizable, transparent, understandable</p>
                 <p>Written in C++17 and CUDA</p>
                 <p>C++ API for high-performance and application integration</p>
                 <p>Python API for ease of use</p>
+                <p>Distributed parallelism using MPI</p>
+                <p>Optimized back end for CUDA</p>
+                <p>Optimized vector back ends for Intel (KNL, AVX, AVX2) and Arm (ARMv8-A NEON) intrinsics</p>
             </aside>
             <aside>
                 <h3>Development practices</h3>
                 <p>Open development</p>
                 <p>Open source</p>
+                <p>Documented specifications</p>
                 <p>Unit testing</p>
                 <p>Continuous integration</p>
                 <p>Validation tests against numeric/analytic models and NEURON: <a href="https://nsuite.readthedocs.io/en/latest/">NSuite</a></p>
