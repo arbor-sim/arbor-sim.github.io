@@ -1,0 +1,12 @@
+---
+layout: master
+title: Project
+---
+{% for post in site.projects limit:10 %}
+<article id="{{post.title}}">
+    <h2><a href="{{ post.url | relative_url }}" rel="bookmark">{{ post.title }}</a></h2>
+    Posted on <time class="entry-date published" datetime="{{ post.date }}">{{ post.date | date: '%d %B %Y' }}</time>
+
+    {{ post.content }}
+</article>
+{% endfor %}
