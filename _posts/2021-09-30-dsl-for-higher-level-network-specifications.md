@@ -23,9 +23,9 @@ and perhaps eventual (partial) inclusion in other formats [4].
 4. https://github.com/NeuroML/NeuroMLlite/
 5. https://github.com/arbor-sim/arbor
 
-We are estimating this to be an interesting project for a PhD student or Postdoc
-with some prior experience, but depending on the candidate and available time we
-could change the scope as needed, a MSc project for instance. A background in
+We are estimating this to be a 6-12 month project, suitable for a Master student
+looking for a thesis-project, or with a optionally increased scope suitable as a side-project for a PhD student or Postdoc with some prior experience. Depending on
+the candidate and available time we could change the scope as needed. A background in
 neuroscience, especially in modeling, and experience with other simulation tools 
 is helpful. We require a working knowledge of C++.
 
