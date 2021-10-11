@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A DSL for Network Specification"
+title: "DSL for higher level network specifications"
 categories: projects
 tags: projects
 ---
