@@ -14,3 +14,5 @@ Part of this change is the introduction of the Arbor Developer Meeting. This mee
 The next **developer meeting** is planned for **24 November 2021**, from **10:00-13:00 CEST**. The meeting will be held [here](https://webconf.fz-juelich.de/b/hui-clp-qgu-ypp); downloadable as [ICS file](/next-dev-meet.ics). Any changes to the scheduling of this meeting will be advertised here and through our [Gitter](https://gitter.im/arbor-sim/community).
 
 Hope to see you there!
+
+Update: the first Arbor Developer meeting was a great success! Please find the minutes [here](https://github.com/arbor-sim/arbor-materials/blob/master/minutes/devmeets/20211124.md).
