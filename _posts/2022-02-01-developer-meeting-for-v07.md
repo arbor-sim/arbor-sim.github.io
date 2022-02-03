@@ -15,4 +15,4 @@ Like last time, in this meeting, a list of features ([see "Next Release" column]
 
 Hope to see you there!
 
-Please find the minutes of earlier Developer Meetings[here](https://github.com/arbor-sim/arbor-materials/blob/master/minutes/devmeets/).
+Please find the minutes of earlier Developer Meetings [here](https://github.com/arbor-sim/arbor-materials/blob/master/minutes/devmeets/).
