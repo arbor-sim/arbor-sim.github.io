@@ -1,13 +1,7 @@
 ---
 layout: master
 ---
-        <hr>
         <section>
-            <header>
-                <p>
-                    Arbor is a multi-compartment neuron simulation library; compatible with next-generation accelerators; best-practices applied to research software; focussed on community-driven development.
-                </p>
-            </header>
             <aside>
                 <h3>Neuroscience</h3>
                 <p>Separately describe neuroscience and execution; no leaky abstractions!</p>
@@ -40,6 +34,30 @@ layout: master
             </aside>
         </section>
         <hr>
+        <article>
+            <h2>News</h2>
+            <ul>
+            {% for post in site.posts limit:5 %}
+              <li>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+          <a href="/news">More news >></a>
+        </article>
+        <hr>
+        <article>
+            <h2>Find a project</h2>
+            <ul>
+            {% for post in site.categories.projects limit:5 %}
+              <li>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+          <a href="/projects">More projects to work on >></a>
+        </article>
+        <hr>
         <article id="get-help">
             <h2>Get help and get involved</h2>
 
@@ -47,9 +65,9 @@ layout: master
 
             <p>Get started with Arbor by following a tutorial or going over Arbors Concepts. The API reference (C++ and Python) and some howtos help you get more advanced stuff done.</p>
 
-            <p><strong><a href="https://github.com/arbor-sim/arbor/discussions">Arbor Discussions</a> - User Forums</strong></p>
+            <!--<p><strong><a href="https://github.com/arbor-sim/arbor/discussions">Arbor Discussions</a> - User Forums</strong></p>
 
-            <p>Arbor Discussions is a forum for questions on the usage of Arbor, the exchange of code and general discussions about Arbor. The idea is that all users profit by sharing their experience. All Arbor developers are participate in this forum as well, so even more complex questions should be getting a satisfying answer.</p>
+            <p>Arbor Discussions is a forum for questions on the usage of Arbor, the exchange of code and general discussions about Arbor. The idea is that all users profit by sharing their experience. All Arbor developers are participate in this forum as well, so even more complex questions should be getting a satisfying answer.</p>-->
 
             <p><strong><a href="https://gitter.im/arbor-sim/community">Arbor Gitter</a> - Chat</strong></p>
 

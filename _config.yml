@@ -1,9 +1,5 @@
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
-# unfortunately, relative_url and absolute_url NOT AVAILABLE in ubuntus 18.04 jekyll.
-baseurl: #/home/brent/sync/julich/web/arbor-sim.github.io/_site #/subdir_on_server, use with relative_url and absolute_url
-url: https://brent.huisman.pl #https://example.com, use with absolute_url
-#canonical_baseurl: https://brenthuisman.net #REMOVE when above is fixed (jekyll 3.3)
 name:
 include: [".well-known","_redirects"]
