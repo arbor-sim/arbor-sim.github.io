@@ -16,12 +16,12 @@ Slides are available below:
     - Demonstration of Arbor in actual sciencific use
     - Inferior Olive model
 - NeuroML, NMLcc, and the Quest for Warp Speed (20min)
-    - [Slides][/attachments/2023-03-27-hbp-summit-satellite-event_TH.pdf]
+    - [Slides](/attachments/2023-03-27-hbp-summit-satellite-event_TH.pdf)
     - L5b Pyramidal
     - Granule Cell Layer
     - Hands-on
 - Benchmarks (20min)
-    - [Slides][/attachments/2023-03-27-hbp-summit-satellite-event_FB.pdf]
+    - [Slides](/attachments/2023-03-27-hbp-summit-satellite-event_FB.pdf)
     - Is Arbor fast?
     - Including user reports.
 - Interactive session (25min)
