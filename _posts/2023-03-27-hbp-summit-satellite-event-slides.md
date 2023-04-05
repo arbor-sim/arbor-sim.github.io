@@ -30,6 +30,6 @@ Slides are available below:
 - Future (30 min)
     - How have you used Arbor and how do you plan to use Arbor going forward?
     - Brief user presentations
-        - [Hal Lu's slides](/attachments/2023-03-27-hbp-summit-satellite-event_HL.pdf)
+        - [Han Lu's slides](/attachments/2023-03-27-hbp-summit-satellite-event_HL.pdf)
     - Discussion!
 
