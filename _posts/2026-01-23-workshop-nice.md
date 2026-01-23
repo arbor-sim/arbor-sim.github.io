@@ -8,7 +8,7 @@ title: "Arbor Workshop in Nice"
 We will be giving tutorial on Arbor at the 1st EBRAINS Student Conference on
 Interdisciplinary Brain Research in Nice (10-13 March 2026)
 
-https://ebrains.eu/news-and-events/events/2026/1st-ebrains-student-conference-on-interdisciplinary-brain-research
+[Conference](https://ebrains.eu/news-and-events/events/2026/1st-ebrains-student-conference-on-interdisciplinary-brain-research)
 
 ## Abstract
 
