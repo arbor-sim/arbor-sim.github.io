@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Arbor Workshop in Nice"
+---
+
 # Arbor Workshop at the 1st EBRAINS Student Conference (10-13 March 2026)
 
 We will be giving tutorial on Arbor at the 1st EBRAINS Student Conference on
