@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Arbor Calender Generator//
+BEGIN:VEVENT
+SUMMARY:Arbor Weekly Q&A
+DTSTART;TZID=Europe/Amsterdam:20230510T130000
+DTEND;TZID=Europe/Amsterdam:20230510T140000
+LOCATION:https://matrix.to/#/#arbor-sim_community:gitter.im
+RRULE:FREQ=WEEKLY;BYDAY=WE
+END:VEVENT
+END:VCALENDAR

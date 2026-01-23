@@ -3,8 +3,8 @@ VERSION:2.0
 PRODID:-//The Arbor Calender Generator//
 BEGIN:VEVENT
 SUMMARY:Arbor Developer Meeting
-DTSTART;TZID=Europe/Amsterdam;VALUE=DATE-TIME:20220302T100000
-DTEND;TZID=Europe/Amsterdam;VALUE=DATE-TIME:20220302T130000
+DTSTART;TZID=Europe/Amsterdam;VALUE=DATE-TIME:20220830T100000
+DTEND;TZID=Europe/Amsterdam;VALUE=DATE-TIME:20220830T130000
 DESCRIPTION:\n          Agenda and minutes: https://github.com/arbor-sim/a
  rbor-materials/blob/master/minutes/devmeets/\n          Meeting coordinate
  : https://webconf.fz-juelich.de/b/hui-clp-qgu-ypp\n          Arbor dev kan
